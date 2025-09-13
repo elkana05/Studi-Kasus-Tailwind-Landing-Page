@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elkana Sitorus - Web Developer</title>
+
+  <!-- Tailwind (local) -->
+  <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="./tailwind.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  </head>
+<body class="font-sans bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 min-h-screen flex flex-col">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded">Lewati ke konten utama</a>
+  <!-- Header -->
+  <header class="w-full py-6 px-8 flex justify-between items-center bg-opacity-80 bg-gray-900 shadow-lg">
+    <div class="flex items-center gap-3">
+      <img src="poto elcuan.jpg" alt="Elkana Sitorus" loading="lazy" decoding="async" class="w-12 h-12 rounded-full border-2 border-blue-500 shadow-md" />
+      <span class="text-2xl font-bold text-white tracking-wide">Elkana Sitorus</span>
+    </div>
+    <nav aria-label="Navigasi utama" class="text-sm md:text-base">
+      <a href="#services" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Layanan</a>
+      <a href="#about" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Tentang Saya</a>
+      <a href="#tips" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Tips</a>
+      <a href="#contact" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="main" class="flex-1 flex flex-col justify-center items-center text-center py-20 px-4">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">Jasa Web Developer Profesional</h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">Membantu Anda membangun website modern, responsif, dan elegan untuk bisnis, portofolio, atau kebutuhan personal. Dengan pengalaman dan dedikasi, saya siap mewujudkan ide Anda menjadi kenyataan digital.</p>
+    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">Konsultasi Gratis</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-4 bg-gray-800 bg-opacity-80">
+    <h2 class="text-3xl font-bold text-white text-center mb-10">Layanan Saya</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-4">Pembuatan Website</h3>
+        <p class="text-gray-300">Website bisnis, portofolio, landing page, toko online, dan lainnya dengan desain modern dan responsif.</p>
+      </div>
+      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-4">Optimasi & SEO</h3>
+        <p class="text-gray-300">Optimasi kecepatan, SEO dasar, dan struktur website agar mudah ditemukan di mesin pencari.</p>
+      </div>
+      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500">
+        <h3 class="text-xl font-semibold text-white mb-4">Maintenance & Support</h3>
+        <p class="text-gray-300">Perawatan website, update konten, dan dukungan teknis agar website Anda selalu optimal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4">
+    <div class="max-w-4xl mx-auto bg-gray-900 bg-opacity-80 rounded-xl p-10 shadow-xl flex flex-col md:flex-row items-center gap-8">
+      <img src="poto elcuan.jpg" alt="Elkana Sitorus" loading="lazy" decoding="async" class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-lg mb-6 md:mb-0" />
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">Tentang Saya</h2>
+        <p class="text-gray-300 mb-2">Nama: <span class="font-semibold text-blue-400">Elkana Sitorus</span></p>
+        <p class="text-gray-300 mb-2">Profesi: <span class="font-semibold text-blue-400">Web Developer</span></p>
+        <p class="text-gray-300 mb-2">Email: <span class="font-semibold text-blue-400">elkana.sitorus@email.com</span></p>
+        <p class="text-gray-300 mb-2">Lokasi: <span class="font-semibold text-blue-400">Medan, Indonesia</span></p>
+        <p class="text-gray-300 mt-4">Saya adalah seorang Web Developer yang berpengalaman dalam membangun website modern menggunakan teknologi terbaru. Saya siap membantu Anda mewujudkan website impian dengan tampilan elegan dan fungsionalitas maksimal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section (dibersihkan dari duplikasi dan disesuaikan ke tema gelap) -->
+  <section id="tips" class="py-16 px-4 bg-gray-800 bg-opacity-80">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold text-center mb-12 text-white">Tips Meningkatkan Motivasi</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Tip 1 -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-white">Tetapkan Tujuan Jelas</h3>
+          <p class="text-gray-300">Tentukan tujuan spesifik yang ingin Anda capai dengan deadline yang jelas.</p>
+        </div>
+        <!-- Tip 2 -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
+            <i class="fa-solid fa-tasks"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-white">Breakdown Tugas</h3>
+          <p class="text-gray-300">Bagi tujuan besar menjadi tugas-tugas kecil yang lebih mudah dikelola.</p>
+        </div>
+        <!-- Tip 3 -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-white">Kelola Waktu</h3>
+          <p class="text-gray-300">Gunakan teknik manajemen waktu seperti Pomodoro untuk meningkatkan fokus.</p>
+        </div>
+        <!-- Tip 4 -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-white">Self-Care</h3>
+          <p class="text-gray-300">Jaga kesehatan fisik dan mental dengan istirahat yang cukup dan olahraga.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-gray-800 bg-opacity-80">
+    <h2 class="text-3xl font-bold text-white text-center mb-10">Hubungi Saya</h2>
+    <div class="max-w-xl mx-auto bg-gray-900 rounded-xl p-8 shadow-lg">
+      <form class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <label for="name" class="sr-only">Nama</label>
+          <input id="name" name="name" type="text" placeholder="Nama Anda" class="py-3 px-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email Anda" class="py-3 px-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="message" class="sr-only">Pesan</label>
+          <textarea id="message" name="message" placeholder="Pesan" rows="4" class="py-3 px-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">Kirim Pesan</button>
+      </form>
+      <div class="mt-8 text-center text-gray-400">
+        <span>Email: elkana.sitorus@email.com</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 text-center text-gray-400 bg-gray-900 bg-opacity-80 mt-auto">
+    &copy; 2025 Elkana Sitorus. All rights reserved.
+  </footer>
+</body>
+</html>
