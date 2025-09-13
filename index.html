@@ -12,7 +12,7 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji']
+            sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji']
           }
         }
       }
@@ -20,51 +20,57 @@
   </script>
   <script src="./tailwind.js"></script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Local-only setup: no external Google Fonts -->
 
-  <!-- Font Awesome (icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Icons: using inline SVG, no external library -->
+
+  <!-- SEO & Meta -->
+  <meta name="description" content="Jasa Web Developer profesional oleh Elkana Sitorus. Membangun website modern, responsif, dan elegan untuk bisnis dan portofolio." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#111827" />
+  <meta property="og:title" content="Elkana Sitorus - Web Developer" />
+  <meta property="og:description" content="Jasa Web Developer profesional. Website modern, responsif, dan elegan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="poto elcuan.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   </head>
 <body class="font-sans bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 min-h-screen flex flex-col">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded">Lewati ke konten utama</a>
   <!-- Header -->
-  <header class="w-full py-6 px-8 flex justify-between items-center bg-opacity-80 bg-gray-900 shadow-lg">
+  <header class="sticky top-0 z-50 w-full py-4 md:py-6 px-4 md:px-8 flex justify-between items-center bg-gray-900/80 backdrop-blur shadow-lg">
     <div class="flex items-center gap-3">
-      <img src="poto elcuan.jpg" alt="Elkana Sitorus" loading="lazy" decoding="async" class="w-12 h-12 rounded-full border-2 border-blue-500 shadow-md" />
+      <img src="poto elcuan.jpg" alt="Elkana Sitorus" loading="lazy" decoding="async" width="48" height="48" class="w-12 h-12 rounded-full border-2 border-blue-500 shadow-md" />
       <span class="text-2xl font-bold text-white tracking-wide">Elkana Sitorus</span>
     </div>
     <nav aria-label="Navigasi utama" class="text-sm md:text-base">
-      <a href="#services" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Layanan</a>
-      <a href="#about" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Tentang Saya</a>
-      <a href="#tips" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Tips</a>
-      <a href="#contact" class="text-white hover:text-blue-400 px-3 md:px-4 transition">Kontak</a>
+      <a href="#services" class="text-white hover:text-blue-400 px-3 md:px-4 transition rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Layanan</a>
+      <a href="#about" class="text-white hover:text-blue-400 px-3 md:px-4 transition rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Tentang Saya</a>
+      <a href="#tips" class="text-white hover:text-blue-400 px-3 md:px-4 transition rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Tips</a>
+      <a href="#contact" class="text-white hover:text-blue-400 px-3 md:px-4 transition rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Kontak</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="main" class="flex-1 flex flex-col justify-center items-center text-center py-20 px-4">
+  <section id="main" role="main" class="flex-1 flex flex-col justify-center items-center text-center py-20 px-4">
     <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">Jasa Web Developer Profesional</h1>
     <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">Membantu Anda membangun website modern, responsif, dan elegan untuk bisnis, portofolio, atau kebutuhan personal. Dengan pengalaman dan dedikasi, saya siap mewujudkan ide Anda menjadi kenyataan digital.</p>
-    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">Konsultasi Gratis</a>
+    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Konsultasi Gratis</a>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="py-16 px-4 bg-gray-800 bg-opacity-80">
     <h2 class="text-3xl font-bold text-white text-center mb-10">Layanan Saya</h2>
     <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500">
+      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500 transition-transform motion-safe:hover:-translate-y-1">
         <h3 class="text-xl font-semibold text-white mb-4">Pembuatan Website</h3>
         <p class="text-gray-300">Website bisnis, portofolio, landing page, toko online, dan lainnya dengan desain modern dan responsif.</p>
       </div>
-      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500">
+      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500 transition-transform motion-safe:hover:-translate-y-1">
         <h3 class="text-xl font-semibold text-white mb-4">Optimasi & SEO</h3>
         <p class="text-gray-300">Optimasi kecepatan, SEO dasar, dan struktur website agar mudah ditemukan di mesin pencari.</p>
       </div>
-      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500">
+      <div class="bg-gray-900 rounded-xl p-8 shadow-lg border-t-4 border-blue-500 transition-transform motion-safe:hover:-translate-y-1">
         <h3 class="text-xl font-semibold text-white mb-4">Maintenance & Support</h3>
         <p class="text-gray-300">Perawatan website, update konten, dan dukungan teknis agar website Anda selalu optimal.</p>
       </div>
@@ -74,7 +80,7 @@
   <!-- About Section -->
   <section id="about" class="py-16 px-4">
     <div class="max-w-4xl mx-auto bg-gray-900 bg-opacity-80 rounded-xl p-10 shadow-xl flex flex-col md:flex-row items-center gap-8">
-      <img src="poto elcuan.jpg" alt="Elkana Sitorus" loading="lazy" decoding="async" class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-lg mb-6 md:mb-0" />
+      <img src="poto elcuan.jpg" alt="Elkana Sitorus" loading="lazy" decoding="async" width="128" height="128" class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-lg mb-6 md:mb-0" />
       <div>
         <h2 class="text-2xl font-bold text-white mb-4">Tentang Saya</h2>
         <p class="text-gray-300 mb-2">Nama: <span class="font-semibold text-blue-400">Elkana Sitorus</span></p>
@@ -92,33 +98,45 @@
       <h2 class="text-3xl font-bold text-center mb-12 text-white">Tips Meningkatkan Motivasi</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Tip 1 -->
-        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transition-transform motion-safe:hover:-translate-y-1">
           <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
-            <i class="fa-solid fa-bullseye"></i>
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
+            </svg>
           </div>
           <h3 class="font-semibold text-lg mb-2 text-white">Tetapkan Tujuan Jelas</h3>
           <p class="text-gray-300">Tentukan tujuan spesifik yang ingin Anda capai dengan deadline yang jelas.</p>
         </div>
         <!-- Tip 2 -->
-        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transition-transform motion-safe:hover:-translate-y-1">
           <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
-            <i class="fa-solid fa-tasks"></i>
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 7h11M9 12h11M9 17h11" stroke-linecap="round" />
+              <path d="M3 7l2 2l3-3M3 12l2 2l3-3M3 17l2 2l3-3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <h3 class="font-semibold text-lg mb-2 text-white">Breakdown Tugas</h3>
           <p class="text-gray-300">Bagi tujuan besar menjadi tugas-tugas kecil yang lebih mudah dikelola.</p>
         </div>
         <!-- Tip 3 -->
-        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transition-transform motion-safe:hover:-translate-y-1">
           <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
-            <i class="fa-solid fa-clock"></i>
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <h3 class="font-semibold text-lg mb-2 text-white">Kelola Waktu</h3>
           <p class="text-gray-300">Gunakan teknik manajemen waktu seperti Pomodoro untuk meningkatkan fokus.</p>
         </div>
         <!-- Tip 4 -->
-        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transition-transform motion-safe:hover:-translate-y-1">
           <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-gray-800 text-blue-400">
-            <i class="fa-solid fa-heart"></i>
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
           </div>
           <h3 class="font-semibold text-lg mb-2 text-white">Self-Care</h3>
           <p class="text-gray-300">Jaga kesehatan fisik dan mental dengan istirahat yang cukup dan olahraga.</p>
@@ -144,8 +162,9 @@
           <label for="message" class="sr-only">Pesan</label>
           <textarea id="message" name="message" placeholder="Pesan" rows="4" class="py-3 px-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
         </div>
-        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">Kirim Pesan</button>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">Kirim Pesan</button>
       </form>
+      <div id="form-status" role="status" aria-live="polite" class="mt-4 text-sm text-green-400 hidden"></div>
       <div class="mt-8 text-center text-gray-400">
         <span>Email: elkana.sitorus@email.com</span>
       </div>
@@ -156,5 +175,72 @@
   <footer class="w-full py-6 text-center text-gray-400 bg-gray-900 bg-opacity-80 mt-auto">
     &copy; 2025 Elkana Sitorus. All rights reserved.
   </footer>
+
+  <button id="backToTop" aria-label="Kembali ke atas" class="fixed bottom-6 right-6 hidden items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <script>
+    // Highlight nav link aktif saat scroll
+    (function() {
+      const links = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+      const sections = links
+        .map(a => document.querySelector(a.getAttribute('href')))
+        .filter(Boolean);
+      if (!('IntersectionObserver' in window) || sections.length === 0) return;
+      const linkById = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const id = entry.target.id;
+          const link = linkById.get(id);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            links.forEach(l => { l.removeAttribute('aria-current'); l.classList.remove('text-blue-400'); });
+            link.setAttribute('aria-current', 'page');
+            link.classList.add('text-blue-400');
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0.01 });
+      sections.forEach(sec => obs.observe(sec));
+    })();
+
+    // Back to top button
+    (function() {
+      const btn = document.getElementById('backToTop');
+      const toggle = () => {
+        if (window.scrollY > 400) btn.classList.remove('hidden');
+        else btn.classList.add('hidden');
+      };
+      window.addEventListener('scroll', toggle, { passive: true });
+      toggle();
+      btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    })();
+
+    // Form submit feedback (simulasi)
+    (function() {
+      const form = document.querySelector('#contact form');
+      const status = document.getElementById('form-status');
+      if (!form || !status) return;
+      form.setAttribute('novalidate', '');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          status.textContent = 'Mohon lengkapi form dengan benar.';
+          status.classList.remove('hidden');
+          status.classList.remove('text-green-400');
+          status.classList.add('text-red-400');
+          return;
+        }
+        status.textContent = 'Terima kasih! Pesan Anda telah dikirim (simulasi).';
+        status.classList.remove('hidden');
+        status.classList.remove('text-red-400');
+        status.classList.add('text-green-400');
+        form.reset();
+        setTimeout(() => status.classList.add('hidden'), 4000);
+      });
+    })();
+  </script>
 </body>
 </html>
