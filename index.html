@@ -209,6 +209,7 @@
     // Back to top button
     (function() {
       const btn = document.getElementById('backToTop');
+      if (!btn) return; // Memastikan tombol ada sebelum melanjutkan
       const toggle = () => {
         if (window.scrollY > 400) btn.classList.remove('hidden');
         else btn.classList.add('hidden');
